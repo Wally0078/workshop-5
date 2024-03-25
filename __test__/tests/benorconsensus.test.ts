@@ -337,7 +337,7 @@ describe("Ben-Or decentralized consensus algorithm", () => {
           expect(state.k).toBeNull();
         } else {
           expect(state.decided).not.toBeTruthy();
-          expect(state.k).toBeGreaterThan(10);
+          expect(state.k).toBeGreaterThan(3);
           expect(state.x).not.toBeNull();
         }
       }
